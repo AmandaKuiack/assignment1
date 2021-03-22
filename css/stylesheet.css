@@ -1,0 +1,10 @@
+/*LIGHT #1f1d2e and #ebbcba and #E0DEF4 */
+/* DARK #9ccfd8 and #232136 & #fffaf3 and #575279*/
+@media screen and (min-width: 600px){
+    body {
+        background-color: #ebbcba;
+    }
+    header {
+        color: #1f1d2e;
+    }
+}
