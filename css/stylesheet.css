@@ -9,7 +9,7 @@ font-family: 'Roboto', sans-serif; */
         color: #1f1d2e;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.5fr 1.5fr 0.5fr 1.5fr 1fr;
+        grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
         font-family: 'Roboto', sans-serif;
     }
     header h1 {
@@ -18,13 +18,12 @@ font-family: 'Roboto', sans-serif; */
     }
     header div {
         text-align: right;
-        padding: 0 2px;
+        padding: 0 1rem 2rem 0;
     }
     aside {
         background-color: #E0DEF4;
         font-family: 'Merriweather', serif;
         padding-left: 1rem;
-
     }
     aside ul {        
         font-family: 'Roboto', sans-serif; 
@@ -35,7 +34,6 @@ font-family: 'Roboto', sans-serif; */
         
     }
     textarea {
-        font-size: .8rem;
         letter-spacing: 1px;
         font-family: 'Roboto', sans-serif;
     }
@@ -56,12 +54,12 @@ font-family: 'Roboto', sans-serif; */
     nav div {
         display: flex;
         justify-content: space-between;
+        padding: 0 1rem 0 1rem;
     }
     section {
         display: flex;
         justify-content: right;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding: 1rem;
     }
     .dark {
         border: 0;
@@ -133,7 +131,6 @@ font-family: 'Roboto', sans-serif; */
         background-color: #E0DEF4;
         font-family: 'Merriweather', serif;
         text-align: center;
-
     }
     aside ul {
         text-align: left;
