@@ -5,15 +5,17 @@
     <title>Take Better Notes</title>
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <header>
             <h1>Take Better Notes</h1>
-            <nav>
+            <div>
                 <a href="misc/about.html">About</a> <a href="misc/docs.html">Docs</a>
-            </nav>
+            </div>
         </header>
-        <section>
+        <nav>
             <div>
                 <button class="newnote"
                         type="button">
@@ -24,14 +26,15 @@
                         Dark Theme
             </button>
             </div>
-        </section>
+        </nav>
         <article>
             <textarea id="story" name="story"
-            rows="5" cols="60">This is a placeholder
+            rows="5" cols="60">This is a placeholder...
             </textarea>
         </article>
-        <section>
-            <button class="save"
+        <section class="save-cancel">
+            <div>
+                <button class="save"
                         type="button">
                         Save
             </button>
@@ -39,6 +42,7 @@
                         type="button">
                         Cancel
             </button>
+            </div>
         </section>
         <aside>
             <h1>My Notes</h1>
