@@ -4,13 +4,23 @@
     body {
         background-color: #ebbcba;
         color: #1f1d2e;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 1fr;
+    }
+    header h1 {
+        text-align: center;
+    }
+    nav {
+        text-align: right;
+    }
+    nav a {
+        padding: 0 2px;
     }
     aside {
         background-color: #E0DEF4;
         
     }
-
-    
     textarea {
         font-size: .8rem;
         letter-spacing: 1px;
@@ -21,6 +31,14 @@
         line-height: 1.5;
         border-radius: 5px;
         border: 2px solid #575279;
+        width: 90%; 
+    }
+    footer {
+        text-align: center;
+    }
+    section div {
+        display: flex;
+        justify-content: space-between;
     }
     .dark {
         border: 0;
@@ -31,6 +49,7 @@
         color: #fffaf3;
         border-radius: 10px;
         background-color: #575279;
+        justify-self: right;
     }
     .newnote {
         border: 0;
