@@ -6,7 +6,26 @@
 - ask Neda for help if I don't know how to do something or if I am stuck
 - try not to cry */
 
-
+/*Save text function plan:
+- have an empty array ready to recieve text
+- add an onclick to save button to call function
+- write a function like:
+- let myNotesArray = []
+let saveButton = document.querySelector(".save");
+function saveTextFunction() {
+    let textSelect = document.querySelector("textarea").innerHTML;
+    let selectList = document.querySelector("aside ul")
+    myNotesArray.push(textSelect);
+    myNotesArray.forEach(function(item) {
+        let listItem = document.createElement("li");
+        let addTxt = document.createTextNode(item);
+        listItem.appendChild(addTxt)
+    });
+    document.querySelector("textarea").reset();
+};
+- not sure how to add title... maybe some sort of interating loop or if/else? Ask Neda
+*/
+  
 
 /* Light/Dark theme function plan:
 - add lighttheme class to body, aside, textarea, and buttons in html
