@@ -1,10 +1,10 @@
 /* TO DO:
 - plan function to take text from textarea and add to array
-- great function to toggle dark theme on and off with a click
-- function to hide textarea, save and cancel button, and for newnote button to bring them back
-- google how to do any of this as I suck at JS
+- plan function to toggle dark theme on and off with a click
+- plan function to hide textarea, save and cancel button, and for newnote button to bring them back
+- google how to do any of this
 - ask Neda for help if I don't know how to do something or if I am stuck
-- try not to cry */
+- try not to cry (just kidding Neda, I won't cry)*/
 
 /*Save text function plan:
 - have an empty array ready to recieve text
@@ -23,6 +23,8 @@ function saveTextFunction() {
     });
     document.querySelector("textarea").reset();
 };
+- this code doesn't really work, but that is kind of the idea of what I would wright
+- will hopefully figure it out after class tomorrow
 - not sure how to add title... maybe some sort of interating loop or if/else? Ask Neda
 */
   
@@ -41,7 +43,16 @@ function themeFunction() {
 };
 - add an onlick that will activate function
 - probably have some sort of if/else statement if is already says one or the other?
-- ask neda about changing text if I can't find it in google, or if it is not covered in class
-
+- ask neda about changing text if I can't find it through google, or if it is not covered in class
 */
 
+/*Cancel button/newnote button plan:
+- add onclick to cancel button and newnote button to activate functions
+- I don't really know what to do, need to google/ask Neda
+- make a function that when the cancel button is clicked, the textarea, save button and cancel 
+button will be hidden/disappear
+- maybe that is some sort of toggle? Or remove?
+- make another function that when clicked by the newnote button will make the textarea, save 
+button, and cancel button reappear/be visible, should reset textarea too
+- probably also a toggle, or perhaps an add?
+*/
