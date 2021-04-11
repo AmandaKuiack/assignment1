@@ -115,6 +115,9 @@ section {
     background-color: #56949f;
     margin-right: 1rem;
 }
+.hide-me {
+    visibility: hidden;
+}
 @media screen and (max-width: 600px){
     body {
         display: grid;

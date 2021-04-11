@@ -49,9 +49,13 @@ const themeChangeButton = document.querySelector(".theme");
 const bodyTheme = document.querySelector(".lighttheme");
 const asideTheme = document.querySelector(".lightaside");
 const txtareaTheme = document.querySelector(".lighttxtarea");
+const cancelButton = document.querySelector(".cancel");
+const saveButton = document.querySelector(".save");
+const txtArea = document.getElementById("story")
+const newnoteButton = document.querySelector(".newnote")
+const ul = document.querySelector(".notes-list")
 
-
-
+let notesArray = []
 
 function themeFunction(){
     
@@ -81,3 +85,27 @@ button will be hidden/disappear
 button, and cancel button reappear/be visible, should reset textarea too
 - probably also a toggle, or perhaps an add?
 */
+
+function hideTxtArea(){
+    cancelButton.classList.add("hide-me");
+    saveButton.classList.add("hide-me");
+    txtArea.classList.add("hide-me");
+}
+
+function resetTxt(){
+    cancelButton.classList.remove("hide-me");
+    saveButton.classList.remove("hide-me");
+    txtArea.classList.remove("hide-me");
+    if (!txtArea.value || txtArea.value != txtArea.defaultValue) {
+        txtArea.value = txtArea.defaultValue;
+    }
+}
+
+
+
+
+
+
+cancelButton.addEventListener('click', hideTxtArea);
+newnoteButton.addEventListener('click', resetTxt);
+// saveButton.addEventListener('click', saveNotes);
