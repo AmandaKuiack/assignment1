@@ -45,6 +45,11 @@ function themeFunction() {
 - probably have some sort of if/else statement if is already says one or the other?
 - ask neda about changing text if I can't find it through google, or if it is not covered in class
 */
+const themeChangeButton = document.querySelector(".theme");
+const bodyTheme = document.querySelector(".lighttheme")
+const asideTheme = document.querySelector(".lightaside")
+const txtareaTheme = document.querySelector(".lighttxtarea")
+const buttonTheme = document.querySelector(".lightbtn")
 
 /*Cancel button/newnote button plan:
 - add onclick to cancel button and newnote button to activate functions

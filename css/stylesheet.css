@@ -4,13 +4,17 @@
 
 font-family: 'Roboto', sans-serif; */
 body {
-    background-color: #ebbcba;
-    color: #1f1d2e;
+    background-color: #232136;
+    color: #fffaf3;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 0.5fr 1.5fr 0.5fr 1fr;
     font-family: 'Roboto', sans-serif;
     margin: 0;
+}
+.lighttheme {
+    background-color: #ebbcba;
+    color: #1f1d2e;
 }
 header h1 {
     text-align: center;
@@ -21,14 +25,24 @@ nav {
     padding: 0 1rem 2rem 0;
     
 }
+a:link {
+    color: #286983;
+}
+a:visited {
+    color: #907aa9;
+}
+
 aside {
     grid-column: 1/2;
     grid-row:1/7;
-    background-color: #E0DEF4;
+    background-color: #393552;
     font-family: 'Merriweather', serif;
     text-align: center;
     height: 100vh;
 
+}
+.lightaside{
+    background-color: #E0DEF4;
 }
 aside ul {
     text-align: left;
@@ -42,7 +56,7 @@ article {
 }
 
 textarea {
-    background-color: #E0DEF4;
+    background-color: #907aa9;
     padding: 10px;
     line-height: 1.5;
     border-radius: 5px;
@@ -50,7 +64,9 @@ textarea {
     width: 95%; 
     letter-spacing: 1px;
     font-family: 'Roboto', sans-serif;
-
+}
+.lighttxtarea {
+    background-color: #E0DEF4;
 }
 footer {
     grid-column: 2/3;
@@ -77,24 +93,30 @@ section {
     padding: 2px 10px;
     font-size: 1rem;
     text-align: center;
-    color: #fffaf3;
+    color: #1f1d2e;
     border-radius: 10px;
-    background-color: #56949f;
+    background-color: #f6c177;
     height: 3.5rem;
 }
-.light {
+.newnote {
+    color: #fffaf3;
+    background-color: #56949f;
+}
+.lightbtn {
+    color: #fffaf3;
     background-color: #575279;
 }
 .cancel {
+    color: #fffaf3;
     background-color: #b4637a;
 }
 .save {
+    color: #fffaf3;
+    background-color: #56949f;
     margin-right: 1rem;
 }
 @media screen and (max-width: 600px){
     body {
-        background-color: #ebbcba;
-        color: #1f1d2e;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
@@ -119,16 +141,13 @@ section {
     footer {
         grid-row: 6/7;
     }
- 
     textarea {
-        background-color: #E0DEF4;
         padding: 10px;
         line-height: 1.5;
         border-radius: 5px;
         border: 2px solid #575279;
         width: 90%; 
     }
-
     main {
         grid-column: 2/3;
         display: flex;
@@ -140,28 +159,10 @@ section {
         justify-content: right;
         padding: 1rem;
     }
-
-    .button {
-        border: 0;
-        line-height: 2.5;
-        padding: 2px 10px;
-        font-size: 1rem;
-        text-align: center;
-        color: #fffaf3;
-        border-radius: 10px;
-        background-color: #56949f;
-        
-    }
     .save {
         margin-right: 5px;
         
     }
-    .light {
-        background-color: #575279;
-        
-    }
-    .cancel {
-        background-color: #b4637a;
-        
-    }
+
+
 }
