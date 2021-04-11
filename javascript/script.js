@@ -101,11 +101,17 @@ function resetTxt(){
     }
 }
 
-
-
-
+function saveNotes(){
+    let userInput = prompt("Please enter a title for your notes: ");
+    let currentNotes = txtArea.value;
+    notesArray.unshift({title: userInput, body: currentNotes});
+    let newLi = document.createElement("li");
+    let text = document.createTextNode(userInput);
+    newLi.appendChild(text);
+    ul.appendChild(newLi);
+}
 
 
 cancelButton.addEventListener('click', hideTxtArea);
 newnoteButton.addEventListener('click', resetTxt);
-// saveButton.addEventListener('click', saveNotes);
+saveButton.addEventListener('click', saveNotes);
