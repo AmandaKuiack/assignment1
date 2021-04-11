@@ -46,11 +46,31 @@ function themeFunction() {
 - ask neda about changing text if I can't find it through google, or if it is not covered in class
 */
 const themeChangeButton = document.querySelector(".theme");
-const bodyTheme = document.querySelector(".lighttheme")
-const asideTheme = document.querySelector(".lightaside")
-const txtareaTheme = document.querySelector(".lighttxtarea")
-const buttonTheme = document.querySelector(".lightbtn")
+const bodyTheme = document.querySelector(".lighttheme");
+const asideTheme = document.querySelector(".lightaside");
+const txtareaTheme = document.querySelector(".lighttxtarea");
 
+
+
+
+function themeFunction(){
+    
+    if (themeChangeButton.textContent === "Dark Theme"){
+        bodyTheme.classList.toggle("lighttheme");
+        asideTheme.classList.toggle("lightaside");
+        txtareaTheme.classList.toggle("lighttxtarea");
+        themeChangeButton.classList.toggle("lightbtn");
+        themeChangeButton.textContent = "Light Theme"
+    }
+    else {
+        themeChangeButton.textContent = "Dark Theme"
+        bodyTheme.classList.toggle("lighttheme");
+        asideTheme.classList.toggle("lightaside");
+        txtareaTheme.classList.toggle("lighttxtarea");
+        themeChangeButton.classList.toggle("lightbtn");
+    }
+};
+themeChangeButton.addEventListener('click', themeFunction);
 /*Cancel button/newnote button plan:
 - add onclick to cancel button and newnote button to activate functions
 - I don't really know what to do, need to google/ask Neda
