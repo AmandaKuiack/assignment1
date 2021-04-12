@@ -47,13 +47,13 @@ function themeFunction() {
 */
 const themeChangeButton = document.querySelector(".theme");
 const bodyTheme = document.querySelector(".lighttheme");
-const asideTheme = document.querySelector(".lightaside");
-const txtareaTheme = document.querySelector(".lighttxtarea");
+const asideTheme = document.querySelector("aside");
+const txtArea = document.getElementById("story")
 const cancelButton = document.querySelector(".cancel");
 const saveButton = document.querySelector(".save");
-const txtArea = document.getElementById("story")
-const newnoteButton = document.querySelector(".newnote")
-const ul = document.querySelector(".notes-list")
+const newnoteButton = document.querySelector(".newnote");
+const ul = document.querySelector(".notes-list");
+let count = 1
 
 let notesArray = []
 
@@ -62,15 +62,17 @@ function themeFunction(){
     if (themeChangeButton.textContent === "Dark Theme"){
         bodyTheme.classList.toggle("lighttheme");
         asideTheme.classList.toggle("lightaside");
-        txtareaTheme.classList.toggle("lighttxtarea");
+        txtArea.classList.toggle("lighttxtarea");
         themeChangeButton.classList.toggle("lightbtn");
+        saveButton.classList.toggle("save");
         themeChangeButton.textContent = "Light Theme"
     }
     else {
         themeChangeButton.textContent = "Dark Theme"
         bodyTheme.classList.toggle("lighttheme");
         asideTheme.classList.toggle("lightaside");
-        txtareaTheme.classList.toggle("lighttxtarea");
+        txtArea.classList.toggle("lighttxtarea");
+        saveButton.classList.toggle("save");
         themeChangeButton.classList.toggle("lightbtn");
     }
 };
@@ -108,11 +110,28 @@ function saveNotes(){
     let newLi = document.createElement("li");
     let text = document.createTextNode(userInput);
     newLi.appendChild(text);
-    newLi.classList.add("getText");
+    newLi.classList.add(`getText${count}`);
     ul.appendChild(newLi);
+    count++
+}
+
+function retrieveText(clicked){
+    
+    let clickedNote = clicked.target.innerHTML
+    console.log(clickedNote)
+    for (let item of notesArray){
+        if (item.title === clickedNote){
+            alert(`Loading contents of ${item.title}`)
+            txtArea.value = item.body
+        }
+        
+    }
+  
+
 }
 
 
 cancelButton.addEventListener('click', hideTxtArea);
 newnoteButton.addEventListener('click', resetTxt);
 saveButton.addEventListener('click', saveNotes);
+ul.addEventListener('click', retrieveText)
