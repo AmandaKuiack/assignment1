@@ -53,8 +53,8 @@ const cancelButton = document.querySelector(".cancel");
 const saveButton = document.querySelector(".save");
 const newnoteButton = document.querySelector(".newnote");
 const ul = document.querySelector(".notes-list");
-let count = 1
 
+let count = 1
 let notesArray = []
 
 function themeFunction(){
@@ -65,6 +65,8 @@ function themeFunction(){
         txtArea.classList.toggle("lighttxtarea");
         themeChangeButton.classList.toggle("lightbtn");
         saveButton.classList.toggle("save");
+        cancelButton.classList.toggle("cancel");
+        newnoteButton.classList.toggle("newnote");
         themeChangeButton.textContent = "Light Theme"
     }
     else {
@@ -73,6 +75,8 @@ function themeFunction(){
         asideTheme.classList.toggle("lightaside");
         txtArea.classList.toggle("lighttxtarea");
         saveButton.classList.toggle("save");
+        cancelButton.classList.toggle("cancel");
+        newnoteButton.classList.toggle("newnote");
         themeChangeButton.classList.toggle("lightbtn");
     }
 };

@@ -10,6 +10,7 @@ body {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 0.5fr 1.5fr 0.5fr 1fr;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     margin: 0;
 }
 .lighttheme {
@@ -27,9 +28,11 @@ nav {
 }
 a:link {
     color: #286983;
+    
 }
 a:visited {
     color: #907aa9;
+    
 }
 
 aside {
@@ -61,7 +64,7 @@ textarea {
     line-height: 1.5;
     border-radius: 5px;
     border: 2px solid #575279;
-    width: 92%; 
+    width: 95%; 
     letter-spacing: 1px;
     font-family: 'Roboto', sans-serif;
 }
