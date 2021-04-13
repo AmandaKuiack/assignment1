@@ -149,10 +149,6 @@ section {
         grid-row: 6/7;
     }
     textarea {
-        padding: 10px;
-        line-height: 1.5;
-        border-radius: 5px;
-        border: 2px solid #575279;
         width: 90%; 
     }
     main {
